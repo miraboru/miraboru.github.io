@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- C_21761024_김준영 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width:950px;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+    .c1 {width:8.33%; float:left; padding:15px;}
+    .c2 {width:16.66%; float:left; padding:5px;}
+    .c3 {width:25%; float:left; padding:0px;}
+    .c4 {width:33.33%; float:left; padding:15px;}
+    .c5 {width:41.6%; float:left; padding:15px;}
+    .c6 {width:50%; float:left; padding:15px;}
+    .c7 {width:58.33%; float:left; padding:15px;}
+    .c8 {width:66.66%; float:left; padding:15px;}
+    .c9 {width:75%; float:left; padding:15px;}
+    .c10 {width:83.3%; float:left; padding:15px;}
+    .c11 {width:91.6%; float:left; padding:15px;}
+    .c12 {width:100%; float:left; padding:15px;}
+
+    @media only screen and (max-width: 950px) {
+      [class*="c"] {
+        width:100%;
+        }
+      }
+      ul {
+        list-style-type:none;
+      }
+      .cols li {
+        display:inline-block;
+      }
+      .cols li.col1 {
+        width:120px;
+        text-align:right;
+      }
+      .cols li.col2 {
+        width:500px;
+      }
+      .cols li.col2 input.hp {
+        width:35px;
+      }
+      #ct_title {
+        margin-left:100px;
+        font-size:30px;
+        font-family: 'Montserrat', sans-serif;
+      }
+      table {
+        margin-left:95px;
+      }
+      #btn {
+        float:left;
+        margin-left:580px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4 id="ct_title">Contact</h4>
+    <form>
+      <table>
+        <tr>
+          <td>이름</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td><input type="text"> @
+              <select id="email">
+                <option>선택</option>
+                <option>naver.com</option>
+                <option>hanmail.net</option>
+                <option>gmail.com</option>
+                <option>직접입력</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>문의 내용</td>
+            <td><textarea rows="5" cols="80"></textarea></td>
+          </tr>
+      </table>
+    </form>
+    <p><img id="btn" src="button.png" width="120"></p>
+  </body>
+</html>
